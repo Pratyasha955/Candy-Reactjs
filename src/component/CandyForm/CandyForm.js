@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './CandyForm.css';
-import { useCandyContext  } from '../Store/CandyContext';
+import { useCandyContext } from '../Store/CandyContext';
 
 const CandyForm = () => {
   const { addCandy } = useCandyContext();
@@ -27,7 +27,6 @@ const CandyForm = () => {
       price: 0,
     });
   };
-
 
   return (
     <div className="product-form">

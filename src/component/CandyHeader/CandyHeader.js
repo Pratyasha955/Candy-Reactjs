@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { useCandyContext  } from '../Store/CandyContext';
-import "./CandyHeader.css";
+import { useCandyContext } from '../Store/CandyContext';
+import './CandyHeader.css';
 
 const CandyHeader = (props) => {
   const { calculateTotalQuantity } = useCandyContext();

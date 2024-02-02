@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCandyContext  } from '../Store/CandyContext';
+import { useCandyContext } from '../Store/CandyContext';
 import './CandyList.css';
 
 const CandyList = () => {

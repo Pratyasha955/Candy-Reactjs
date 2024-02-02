@@ -3,7 +3,7 @@ import CandyForm from './component/CandyForm/CandyForm';
 import CandyHeader from './component/CandyHeader/CandyHeader';
 import CandyList from './component/CandyList/CandyList';
 import Cart from './component/Cart/Cart';
-import { CandyProvider  } from './component/Store/CandyContext';
+import { CandyProvider } from './component/Store/CandyContext';
 
 const App = () => {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -19,6 +19,7 @@ const App = () => {
   return (
     <Fragment>
       <CandyProvider>
+        {/* Render Cart component only if cartIsShown is true */}
         {cartIsShown && <Cart onClose={hideCartHandler} />}
         <CandyHeader onShowCart={showCartHandler} />
         <CandyForm />

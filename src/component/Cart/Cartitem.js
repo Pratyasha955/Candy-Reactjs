@@ -1,16 +1,16 @@
 import React from 'react';
-import "./Cartitem.css";
+import './Cartitem.css';
 
-const Cartitem = ({ item }) => {
+const CartItem = ({ item }) => {
   return (
-    <li>
-    <div className="cart-item">
-      <samp className="cart-item1">{item.name}</samp>
-      <p className="cart-item3"><samp className="amount">x {item.quantity}</samp></p>
-      <samp className="cart-item2">${item.price}</samp>
-    </div>
-  </li>
+    <li className="cart-item">
+      <div className="cart-item-details">
+        <span className="cart-item-name">{item.name}</span>
+        <span className="cart-item-quantity">x {item.quantity}</span>
+      </div>
+      <span className="cart-item-price">${item.price}</span>
+    </li>
   );
 };
 
-export default Cartitem;
+export default CartItem;
